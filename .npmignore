@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+
+# Git files
+.git/
+.gitignore
+.github/
+
+# Demo and development
+demo/
+.eslintrc*
+prettier*
+
+# Testing
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Documentation
+README.md
+CHANGELOG.md
+LICENSE
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Other
+.DS_Store
+*.local
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
