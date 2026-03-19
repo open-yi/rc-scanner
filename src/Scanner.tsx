@@ -26,9 +26,15 @@ export const Scanner = React.forwardRef<unknown, ScannerProps>(
           "It is not possible to switch camera to different one because there is only one video device accessible.",
         canvas: "Canvas is not supported.",
       },
-      streamReadyCallback = (stream: MediaStream) => {},
-      activeStream = (stream: MediaStream) => {},
-      streamError = (isError: boolean) => {},
+      streamReadyCallback = (stream: MediaStream) => {
+        console.log("Stream ready:", stream);
+      },
+      activeStream = (stream: MediaStream) => {
+        console.log("Active stream:", stream);
+      },
+      streamError = (isError: boolean) => {
+        console.log("Stream error:", isError);
+      },
       crop = true,
       takingPhoto = false,
       style,

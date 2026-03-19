@@ -43,9 +43,10 @@ export const detectPixel = (stream: Stream, setCurrentPixel: (pixel: any) => voi
 export const handleSuccess = (
   stream: MediaStream,
   setNumberOfCameras: (count: number) => void,
-  currentPixel: any,
+  _currentPixel: any,
   setCurrentPixel: (pixel: any) => void,
 ) => {
+  console.log("Current pixel:", _currentPixel);
   detectPixel(stream, setCurrentPixel);
   navigator.mediaDevices
     .enumerateDevices()
