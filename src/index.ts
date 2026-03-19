@@ -1,2 +1,3 @@
-export { Scanner } from './components/Scanner';
-export type { ScannerProps } from './components/Scanner';
+export { Scanner } from './Scanner';
+export type { ScannerProps, ScannerType } from './types';
+
